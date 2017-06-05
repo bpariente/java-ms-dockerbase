@@ -1,5 +1,7 @@
 FROM alpine:3.6
 
+ARG VERSION=$VERSION
+
 RUN apk update && \
   apk upgrade && \
   apk add openjdk8 && \
