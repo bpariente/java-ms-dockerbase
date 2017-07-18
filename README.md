@@ -1,4 +1,4 @@
-#Java-ms-dockerbase
+# Java-ms-dockerbase
 
 This image is based on Alpine 3.6 and provides OpenJDK 8 with 8.131.11-r0(JDK) version
 
@@ -14,4 +14,3 @@ That's why this image includes that setting by default allowing the use of urand
 
 This image uses the '/data' folder as WORKDIR 
 
- 
