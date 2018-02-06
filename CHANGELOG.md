@@ -1,7 +1,10 @@
 # Changelog
 
+## 0.4.0 (Upcoming)
 
-## 0.3.0 (31-01-2018)
+* Confd is now the new configuration management tool.
+
+## 0.3.0 (Upcoming)
 
 * consul-template updated to 0.19.4 version
 * KM_Util updated to 0.4.0 version
