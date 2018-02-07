@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3.0 (upcoming)
+## 0.3.0 (February 07, 2018)
 
 * consul-template updated to 0.19.4 version
 * KM_Util updated to 0.4.0 version
