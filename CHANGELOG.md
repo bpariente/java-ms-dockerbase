@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0 (upcoming)
+
+* Pending changelog
+
 ## 0.3.0 (upcoming)
 
 * consul-template updated to 0.19.4 version
