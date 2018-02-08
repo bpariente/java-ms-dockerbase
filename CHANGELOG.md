@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 1.0.0 (upcoming)
+## 1.0.0 (February 08, 2018)
 
 * Confd subitutes consul-template as configuration manager tool.
 
