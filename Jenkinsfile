@@ -7,7 +7,7 @@ hose {
    BUILDTOOL = 'make'
    DEVTIMEOUT = 30
    RELEASETIMEOUT = 30
-
+   NEW_VERSIONING = true
    PKGMODULESNAMES = ['java-microservice-dockerbase']
 
    DEV = { config ->      
