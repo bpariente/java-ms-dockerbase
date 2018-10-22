@@ -2,7 +2,7 @@
 
 ## 1.1.0 (upcoming)
 
-* Pending changelog
+* Update alpine version from 3.6 to 3.8
 
 ## 1.0.0 (February 08, 2018)
 
