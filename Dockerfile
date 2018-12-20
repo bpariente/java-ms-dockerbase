@@ -4,7 +4,7 @@ ARG VERSION=$VERSION
 ENV CONFD_VERSION 0.15.0
 ENV KM_UTILS_VERSION 0.4.3
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
-ENV B_LOG_VERSION 0.4.2
+ENV B_LOG_VERSION 0.4.3
 
 
 ADD http://thirdparties.repository.stratio.com/confd/confd-${CONFD_VERSION}-linux-amd64 /data/confd/confd
