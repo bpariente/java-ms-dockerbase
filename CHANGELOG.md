@@ -1,10 +1,14 @@
 # Changelog
 
-## 1.1.0 (upcoming)
+## 1.2.0 (upcoming)
+
+* Pending changelog
+
+## 1.1.0-65e19e5 (Built: December 20, 2018 | Pre-release)
 
 * Updated alpine version from 3.6 to 3.8
 * Updated kms_utils version
-* Updated Java version to 8.181.13-r0 
+* Updated Java version to 8.181.13-r0
 
 ## 1.0.0 (February 08, 2018)
 
