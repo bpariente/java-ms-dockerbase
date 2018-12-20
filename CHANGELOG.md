@@ -2,7 +2,9 @@
 
 ## 1.1.0 (upcoming)
 
-* Update alpine version from 3.6 to 3.8
+* Updated alpine version from 3.6 to 3.8
+* Updated kms_utils version
+* Updated Java version to 8.181.13-r0 
 
 ## 1.0.0 (February 08, 2018)
 

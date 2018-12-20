@@ -1,6 +1,6 @@
 # Java-ms-dockerbase
 
-This image is based on Alpine 3.8 and provides OpenJDK 8 with 8.171.11-r0(JDK) version
+This image is based on Alpine 3.8 and provides OpenJDK 8 with 8.181.13-r0(JDK) version
 
 ## Avoiding JVM Delays Caused by Random Number Generation
 
