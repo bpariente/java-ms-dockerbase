@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 1.1.0-65e19e5 (Built: December 20, 2018 | Pre-release)
+## 1.1.0-65e19e5 (Built: December 20, 2018 | Released: December 20, 2018)
 
 * Updated alpine version from 3.6 to 3.8
 * Updated kms_utils version
