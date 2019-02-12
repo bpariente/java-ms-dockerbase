@@ -2,7 +2,11 @@
 
 ## 1.2.0 (upcoming)
 
-* Pending changelog
+* Change to Java Zulu 11.0.1 
+* Split image with multistage to reduce size
+* Just added JRE
+* Changed kms_utils, b-log and confd folder to /data/stratio
+* Updated kms_utils and b-log to 0.4.3
 
 ## 1.1.0-65e19e5 (Built: December 20, 2018 | Released: December 20, 2018)
 
