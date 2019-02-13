@@ -1,14 +1,13 @@
 # Java-ms-dockerbase
 
-This image is based on Alpine 3.8 and provides OpenJDK 8 with 8.181.13-r0(JDK) version
+This image is based on Alpine 3.8 and provides Zulu with Java 11.0.2(JDK) version
 
-## Avoiding JVM Delays Caused by Random Number Generation
+# Tools
 
-The library used for random number generation in Sun's JVM relies on /dev/random by default for UNIX platforms.
-This can potentially block the Server process because on some operating systems /dev/random waits for a certain amount
-of "noise" to be generated on the host machine before returning a result.
-
-That's why this image includes that setting by default allowing the use of urandom instead of random
+This image contains in /data/stratio:
+* kms_utils version 0.4.3
+* b-log version 0.4.3
+* confd version 0.15.0
 
 ## Folders
 
