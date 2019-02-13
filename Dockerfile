@@ -1,4 +1,22 @@
-FROM azul/zulu-openjdk-alpine:11 as packager
+FROM alpine:3.8 as packager
+
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
+ENV JAVA_HOME=/usr/lib/jvm/zulu-11
+RUN ZULU_ARCH=zulu11.29.3-ca-jdk11.0.2-linux_musl_x64.tar.gz && \
+    INSTALL_DIR=$( dirname $JAVA_HOME ) && \
+    BIN_DIR=/usr/bin && \
+    MAN_DIR=/usr/share/man/man1 && \
+    ZULU_DIR=$( basename ${ZULU_ARCH} .tar.gz ) && \
+    wget -q tools.stratio.com/zulu/${ZULU_ARCH} && \
+    mkdir -p ${INSTALL_DIR} && \
+    tar -xf ./${ZULU_ARCH} -C ${INSTALL_DIR} && rm -f ${ZULU_ARCH} && \
+    mv ${INSTALL_DIR}/${ZULU_DIR} ${JAVA_HOME} && \
+    cd ${BIN_DIR} && find ${JAVA_HOME}/bin -type f -perm -a=x -exec ln -s {} . \; && \
+    mkdir -p ${MAN_DIR} && \
+    cd ${MAN_DIR} && find ${JAVA_HOME}/man/man1 -type f -name "*.1" -exec ln -s {} . \;
+
 
 RUN { \
         java --version ; \
@@ -12,7 +30,7 @@ ENV JAVA_MINIMAL=/opt/jre
 RUN jlink \
     --verbose \
     --add-modules \
-        java.base,java.compiler,java.datatransfer,java.desktop,java.instrument,java.logging,java.management,java.management.rmi,java.naming,java.net.http,java.prefs,java.rmi,java.scripting,java.se,java.security.jgss,java.security.sasl,java.smartcardio,java.sql,java.sql.rowset,java.transaction.xa,java.xml,java.xml.crypto \
+        java.base,java.compiler,java.datatransfer,java.instrument,java.logging,java.management,java.management.rmi,java.naming,java.net.http,java.prefs,java.rmi,java.scripting,java.se,java.security.jgss,java.security.sasl,java.sql,java.sql.rowset,java.transaction.xa,java.xml,java.xml.crypto \
     --compress 2 \
     --strip-debug \
     --no-header-files \
